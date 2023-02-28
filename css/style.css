@@ -1,0 +1,70 @@
+*{
+  padding: 0%;
+  margin: 0%;
+}
+
+body{
+  height: 100vh;
+  background: linear-gradient(
+      to right,
+      white 0%,
+      white 55%,
+      pink 55%,
+      pink 100%)
+  
+}
+
+
+.logo {
+   margin-top: 90px;
+   margin-left: 140px;
+   width: 400px;
+   height: 400px;
+}
+
+
+form {
+border: 4px solid black;
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+width: 100%;
+padding: 12px 20px;
+margin: 8px 0;
+display: inline-block;
+border: 1px solid #ccc;
+box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+background-color: #A0E7E5;
+color: white;
+padding: 14px 20px;
+margin: 8px 0;
+border: none;
+cursor: pointer;
+width: 100%;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+opacity: 0.8;
+}
+
+/* Add padding to containers */
+.container {
+position: absolute;
+padding: 16px;
+margin-left: 850px;
+top: 100px
+}
+
+
+
+
+
+
+
+

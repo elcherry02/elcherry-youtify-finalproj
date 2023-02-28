@@ -1,0 +1,295 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', 'Arial', sans-serif;
+  }
+  
+  body {
+height: 100vh;
+background-color: #F4C2C2;
+  }
+
+  /* HEADINGS */
+  
+  h1, p {
+    color: black;
+    line-height: 1.4;
+  }
+  
+  h1 {
+    font-size: 110px;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+  
+  h2 {
+    color: #000;
+    font-size: 1.3rem;
+    text-align: center;
+    line-height: 1.4;
+    margin-bottom: 10px;
+  }
+  
+    .F1 {
+      display: block;
+      margin-left: 50px;
+      margin-right: auto;
+    }    
+
+
+    .F2 {
+      display: block;
+      margin-left: 50px;
+      margin-right: auto;
+    }   
+    
+    .F3 {
+      display: block;
+      margin-left: 50px;
+      margin-right: auto;
+
+    }    
+
+    .F4 {
+      display: block;
+      margin-left: 50px;
+      margin-right: auto;
+    }    
+
+    .F5 {
+      display: block;
+      margin-left: 50px;
+      margin-right: auto;
+    }    
+
+    .F6 {
+      display: block;
+      margin-left: 50px;
+      margin-right: auto;
+    } 
+
+    .F7 {
+      display: block;
+      margin-left: 50px;
+      margin-right: auto;
+    }    
+
+    .social-icon {
+      position: absolute;
+      margin-left: 900px;
+      margin-top: -100px;
+      font-size: 40px;
+      color: #1DA1F2;
+    }
+
+    .social-icon:hover {
+      color: #333333;
+    }
+
+    .social-icon-2 {
+      position: absolute;
+      margin-left: 950px;
+      margin-top: -100px;
+      font-size: 40px;
+      color: #DD2A7B;
+    }
+
+    .social-icon-2:hover {
+      color: #333333;
+    }
+
+    .social-icon-3 {
+      position: absolute;
+      margin-left: 1000px;
+      margin-top: -100px;
+      font-size: 40px;
+      color: #3b5998;
+    }
+
+    .social-icon-3:hover {
+      color: #333333;
+    }
+
+    .social-icon-4 {
+      position: absolute;
+      margin-left: 1050px;
+      margin-top: -100px;
+      font-size: 40px;
+      color: #FF0000;
+      
+    }
+
+    .social-icon-4:hover {
+      color: #333333;
+    }
+
+    .fa-brands {
+      position: absolute;
+      margin-left: 1100px;
+      margin-top: -100px;
+      font-size: 40px;
+      color: #1DB954;
+      
+    }
+
+    .fa-brands:hover {
+      color: #333333;
+    }
+
+    .BLACKPINK {
+      position: absolute;
+      margin-top: -320px;
+      margin-left: 750px;
+    } 
+    
+    .BP {
+      color: black;
+      font-size: xx-large;
+      text-align: center;
+      animation: blink 1s linear infinite;
+    }
+
+    .BP:hover {
+      color:rosybrown;
+
+    }
+ 
+    .BILLIE {
+      position: absolute;
+      margin-top: -360px;
+      margin-left: 750px;
+    }
+
+    .BILLIE-1 {
+      color: black;
+      font-size: xx-large;
+      text-align: center;
+      animation: blink 1s linear infinite;
+    }
+
+    .BILLIE-1:hover {
+      color: rosybrown;
+
+    }
+
+    .DOJA {
+      position: absolute;
+      margin-top: -360px;
+      margin-left: 750px;
+    }
+
+
+    .DOJA-1 {
+      color: black;
+      font-size: xx-large;
+      text-align: center;
+      animation: blink 1s linear infinite;
+    }
+
+    .DOJA-1:hover {
+      color: rosybrown;
+
+    }
+
+
+    .AIRSUPPLY {
+      position: absolute;
+      margin-top: -370px;
+      margin-left: 740px;
+    }
+
+
+    .AIRSUPPLY-1 {
+      color: black;
+      font-size: xx-large;
+      text-align: center;
+      animation: blink 1s linear infinite;
+
+    }
+
+    .AIRSUPPLY-1:hover {
+      color: rosybrown;
+
+    }
+
+
+    .DJSNAKE {
+      position: absolute;
+      margin-top: -350px;
+      margin-left: 750px;
+    }
+
+    .DJSNAKE-1 {
+      color: black;
+      font-size: xx-large;
+      text-align: center;
+      animation: blink 1s linear infinite;
+    }
+
+    .DJSNAKE-1:hover {
+      color: rosybrown;
+
+    }
+
+    .THECARPENTERS {
+      position: absolute;
+      margin-top: -350px;
+      margin-left: 750px;
+    }
+
+    .THECARPENTERS-1 {
+      color: black;
+      font-size: xx-large;
+      text-align: center;
+      animation: blink 1s linear infinite;
+    }
+
+    .THECARPENTERS-1:hover {
+      color: rosybrown;
+
+    }
+
+    .ARTHUR {
+      position: absolute;
+      margin-top: -450px;
+      margin-left: 750px;
+    }
+
+    .ARTHUR-1 {
+      color: black;
+      font-size: xx-large;
+      text-align: center;
+      animation: blink 1s linear infinite;
+    }
+
+    .ARTHUR-1:hover {
+      color: rosybrown;
+
+    }
+
+
+    #icon {
+      width: 80px;
+      cursor: pointer;
+    }
+  
+    .right{
+      float: right;
+      margin-right: 6%;
+      margin-top: 120px;
+      display: flex;
+      align-items: center;
+  }
+  
+  .right p{
+      font-size: 18px;
+      color: #5f5f5f;
+      font-weight: 500;
+      font-family: sans-serif;
+      margin-right: 15px;
+  }
+  
+  #icon{
+      width:80px;
+      cursor: pointer;
+  }

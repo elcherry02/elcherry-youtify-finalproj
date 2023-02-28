@@ -1,0 +1,142 @@
+*
+body
+{
+font-family: Helvetica, Sans-Serif;
+background-color: #E9D6B9;
+
+}
+h2 {font-family: Helvetica, Sans-Serif;
+    font-size: 40px;
+} 
+  
+{
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 20%;
+  height: 220px;
+  padding: 20px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+
+.container img {
+  width: 100%;
+  height: auto;
+}
+
+.container .btn {
+  position: absolute;
+  margin-top: 140px; 
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #fdf5f0;
+  color: black;
+  font-size: 10px;
+  padding: 5px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.container .btn:hover {
+  background-color: ghostwhite;
+}
+
+.container audio{
+	width: 100%;
+	outline: none;
+	color: #F8AFA6;
+}   
+.container .player{
+    display: flex;
+    align-items: center;
+}
+
+.container #soul {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    z-index: 3;
+    margin-left: 90px;
+    margin-top: 220px;
+}
+.container #i{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    z-index: 3;
+    margin-left: 90px;
+    margin-top: 220px;
+}
+.container #youth {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    z-index: 3;
+    margin-left: 90px;
+    margin-top: 220px;
+}
+.container #wait {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    z-index: 3;
+    margin-left: 90px;
+    margin-top: 220px;
+}
+.container #seven {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    z-index: 3;
+    margin-left: 90px;
+    margin-top: 220px;
+}
+.container #sorry {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    z-index: 3;
+    margin-left: 90px;
+    margin-top: 220px;
+}
+.container #wolf {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    z-index: 3;
+    margin-left: 90px;
+    margin-top: 220px;
+}
+.container #lonely {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    z-index: 3;
+    margin-left: 90px;
+    margin-top: 220px;
+}

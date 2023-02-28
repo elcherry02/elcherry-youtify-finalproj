@@ -1,0 +1,141 @@
+
+*section{
+	position: relative;
+}
+.contact{
+	position: relative;
+	z-index: 1x;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	margin: 0;
+	background: #fff;
+}
+.contact .card{
+	position: relative;
+	width: 300px;
+	height: 350px;
+	background: #EBBBB0;
+	margin: 10px;
+	box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+	border-radius: 15px;
+	display: flex;
+	justify-content: center;
+	align-items:center
+	
+}
+.contact .card .cntnt{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	
+	transition: 0.5s;
+}
+.contact .card:hover .cntnt{
+	opacity: 1;
+	transform: translateY(-20px);
+}
+.contact .card .cntnt .imgBx{
+	position: relative;
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	overflow:hidden;
+	border: 10px solid rgba(0,0,0,0.25);
+}
+.contact .card .cntnt .imgBx img{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: 150px;
+	height: 150px;
+	object-fit: cover;
+}
+.contact .card .cntnt .cntntBx h3{
+	color: black;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: 500;
+	font-size: 18px;
+	text-align: center;
+	margin: 20px 0 10px;
+	line-height: 1.4em;	
+}
+.contact .card .cntnt .cntntBx h3 span{
+	font-size: 12px;
+	font-weight: 300;
+	text-transform: initial;
+}
+
+
+/* footer */
+body{
+	display:flex;
+	min-height: 100vh;
+	width: 100%;
+	flex-direction: column;
+	background: #fff;
+}
+footer{
+	 position: relative;
+	 width: 100%;
+	 height: auto;
+	 padding: 50px 100px;
+	 background: #F79489;
+	 display: flex;
+	 justify-content: space-between;
+	 flex-wrap: wrap;
+ }
+ footer .foot {
+	 display: flex;
+	 justify-content: space-between;
+	 flex-wrap: wrap;
+	 flex-direction: row;
+ }
+ footer .foot .sec{
+	 margin-right: 30px;
+ }
+  footer .foot .sec.aboutus{
+	  width: 40%;
+  }
+ footer .foot .sec .aboutus h5{
+	 position: relative;
+	 color: #fff;
+	 font-weight: 500;
+	 margin-bottom: 15px;
+ }
+ .quicklinks {
+	 position: relative;
+	 width: 25%;
+ }
+ .quicklinks ul li{
+	 list-style: none;
+ }
+ .quicklinks ul li a{
+	 color: #F9F1F0;
+	 text-decoration: none;
+	 margin-bottom: 10px;
+	 display: inline-block;
+ }
+ .quicklinks ul li a:hover{
+	 color: #FADCD9;
+ }
+.contactus {
+	 position: relative;
+	 width: 25%;
+ }
+ .contactus ul li{
+	 list-style: none;
+ }
+ .contactus ul li a{
+	 color: #F9F1F0;
+	 text-decoration: none;
+	 margin-bottom: 10px;
+	 display: inline-block;
+ }
+ .contactus ul li a:hover{
+	 color: #FADCD9;
+ }

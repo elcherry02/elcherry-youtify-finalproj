@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="css/style1.css">
+</head>
+<title> WebDev Project </title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', 'Arial', sans-serif;
+}
+
+/* HEADINGS */
+
+h1, p {
+  color: #fff;
+  text-align: center;
+  line-height: 1.4;
+}
+.p1 {
+  text-align: justify;
+  text-justify: inter-word;
+  font-size: 14px;
+  color: black;  
+  padding: 50px; 
+}
+
+.p2 {
+  font-size: 14px;
+  color: #F9F1F0;
+text-align: left;  
+  }
+  
+h1 {
+  font-size: 110px;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+h2 {
+  color: #000;
+  font-size: 50px;
+  text-align: center;
+  line-height: 1.4;
+  margin-bottom: 10px;
+}
+
+h3 {
+  color: #000;
+  font-size: 30px;
+  text-align: center;
+  line-height: 1.4;
+  margin-bottom: 10px;
+}
+
+h4 {
+  color: #000;
+  font-size: 50px;
+  text-align: center;
+  line-height: 1.4;
+  margin-bottom: 10px;
+}
+
+h5 {
+  color: #fff;
+  font-size: 20px;
+  line-height: 1.4;
+  margin-bottom: 10px;
+}
+
+.about-text{
+	width: 550px;
+}
+
+.main{
+	width: 1400px;
+	max-width: 95%;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space around;
+}
+
+button{
+	background: #FFAEBC;
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+	padding: 9px 25px;
+	border: none;
+	border-radius: 50px;
+	transition: all 0.3s ease 0s;
+	top: 10px;
+}
+
+button:hover{
+	background: #A0E7E5;
+	border: #A0E7E5;
+	cursor: pointer;
+}
+
+/* BASIC SETUP */
+
+.page-wrapper {
+  width: 100%;
+  height: auto;
+  display: flex;
+  padding: 30px 10%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-wrapper {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0%;
+  background-color: #fff;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.grad-bar {
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+  background-size: 400% 400%;
+    -webkit-animation: gradbar 15s ease infinite;
+  -moz-animation: gradbar 15s ease infinite;
+  animation: gradbar 15s ease infinite;
+}
+
+/* NAVIGATION */
+
+.navbar {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-items: center;
+  height: 50px;
+}
+.navbar img {
+  height: 16px;
+  width: auto;
+  justify-self: start;
+  margin-left: 20px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+  justify-self: end;
+	
+}
+.nav-item a {
+  color: #FFAEBC;
+  font-size: 0.9rem;
+  font-weight: 400;
+  text-decoration: none;
+  transition: color 0.3s ease-out;
+}
+
+.nav-item a:hover {
+  color: #A0E7E5;
+}
+
+/* SECTIONS */
+
+.headline {
+  width: 100%;
+  height: 100vh;
+  min-height: 350px;
+  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.7)), url('https://i.pinimg.com/originals/cf/2c/a4/cf2ca4f35eff08e2d8724e2e4b5cdf42.gif');
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.features {
+  width: 100%;
+  height: auto;
+  background-color: #F8AFA6;
+  display: flex;
+  padding: 50px 20px;
+  justify-content: center;
+  display: flex;
+}
+
+.feature-container {
+  flex-basis: 30%;
+  margin-top: 10px;
+}
+
+.feature-container p {
+  color: #000;
+  text-align: justify;
+  text-justify: inter-word;
+  padding: 20px;
+  line-height: 1.4;
+  margin-bottom: 15px;
+}
+
+.feature-container img {
+  width: 95%;
+  height: 250px;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.service{
+ width: 100%;
+  height: 25px;
+  background-color: #F8AFA6;
+  display: flex;
+  padding: 50px 20px;
+  justify-content: center;
+  display: flex;
+}
+
+
+/* IMAGE USED */
+.album{
+   margin-left: 140px;
+   width: 400px;
+   height: auto;
+}
+
+
+/* MOBILE MENU & ANIMATION */
+
+.menu-toggle .bar{
+  width: 25px;
+  height: 3px;
+  background-color: #3f3f3f;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-toggle {
+  justify-self: end;
+  margin-right: 25px;
+  display: none;
+}
+
+.menu-toggle:hover{
+  cursor: pointer;
+}
+
+/* KEYFRAME ANIMATIONS */
+
+@-webkit-keyframes gradbar {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+@-moz-keyframes gradbar {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+@keyframes gradbar {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+/* Media Queries */
+
+  /* Mobile Devices - Phones/Tablets */
+
+@media only screen and (max-width: 720px) { 
+  .features {
+    flex-direction: column;
+    padding: 50px;
+  }
+  
+  
+  /* SECTIONS */
+  
+  .headline {
+    height: 20vh;
+  }
+    
+  .feature-container p {
+    margin-bottom: 25px;
+  }
+  
+  .feature-container {
+    margin-top: 20px;
+  }
+  
+  .feature-container:nth-child(2) {
+    order: -1;
+  }
+  
+ 
+}
+</style>
+<body>
+<div class="page-wrapper">
+ <div class="nav-wrapper">
+  <div class="grad-bar"></div>
+  <nav class="navbar">
+    <img src="img/logo1.png" alt="Company Logo" style="width:70px;height:40px;">
+    <ul>
+      <li class="nav-item"><a href="#home"><b>Home</b></a></li>
+      <li class="nav-item"><a href="#about"><b>About</b></a></li>
+      <li class="nav-item"><a href="#content"><b>Content</b></a></li>
+      <li class="nav-item"><a href="Log-In.html"><b>Sign Up</b></a></li>
+	  <li class="nav-item"><a href="#developer"><b>Developers</b></a></li>
+    </ul>
+  </nav>
+		
+  </div>
+  </div>
+  <p id="home"></p>
+  <section class="headline">
+    <h1>YOUTIFY</h1>
+    <p>Select your song. Play the music.</p>
+	<p>Have an account? Sign in here.<br><br> 
+	<a href="Log-In.html"><button>Sign In</button></a>
+  </section><br><br>
+  
+  <div>
+  <p id="about"></p>
+  <section class="about">
+  <div class="main"> 
+  <img src="img/16.png" class="album"  alt="album cover">
+  <div class="about-text">
+  <h4 style="float: right; margin-top: 100px; margin-right: 250px; font-family:Helvetica;"> About Us </h4>
+		  <p class="p1"> Welcome to YOUTIFY, your go-to website for all things musical. 
+		  We're committed to providing you with the highest quality audio, with a focus 
+		  on fostering a love of music, listening skills, and communication.
+		Founded in 2022 by three young women, YOUTIFY has come a long way 
+		from its beginnings in a disassembled idea. The team's initial drive to 
+		offer the best and most current music to everyone inspired them to conduct
+		 an extensive study and inspired them to turn their labor of love and 
+		 determination into a successful online music platform. We now provide 
+		 services to clients worldwide and are proud to be a part of the 
+		 captivating sector of the music industry.</p>
+  </div>
+  </div>
+  </section>
+  <br><br><br>
+  
+  <p id="content"></p>
+  <div class="service">
+  <h4>Content</h4><br>
+  </div>
+  <section class="features">
+    <div class="feature-container">
+      <img src="img/content-1.gif" alt="music1">
+      <h3>Listen</h3>
+      <p><b>A hub for all the music lovers in the world wherein you can listen to your favorite songs and artists or even discover new ones on YouTube. There are many different genres of music on this website, so there is something for everyone!</b></p>
+    </div>
+    <div class="feature-container">
+      <img src="img/content-2.gif" alt="inspire">
+      <h3>Inspire</h3>
+      <p><b>A truly captivating way for us to share and get inspired by the artists we love and admire. Youtify is worth checking out if you struggle to find inspiration or new music to enjoy.</b></p>
+    </div>
+    <div class="feature-container">
+      <img src="img/content-3.gif" alt="Flexbox Feature">
+      <h3>Pursue</h3>
+      <p><b>There are many types of music, each with its unique sound, and the music industry is huge and complex. If you are interested in pursuing your dream in music, you can explore this website and get inspired by different artists.</b></p>
+    </div>
+  </section>
+   <br><br><br><br>
+  <p id="developer"></p>
+  <section class="contact">
+  <section>
+  <h4> Developers </h4><br>
+<div class="contact">
+	<div class="card">
+		<div class="cntnt">
+			<div class="imgBx"><img src="img/cher.jpg"></div>
+			<div class="cntntBx">
+			<h3>Cherry Masibay<br><span></span><b>Group Member</b></h3>
+			</div>
+		</div>	
+	</div>	
+		
+	<div class="card">
+		<div class="cntnt">
+			<div class="imgBx"><img src="img/rena2.jpg"></div>
+			<div class="cntntBx">
+			<h3>Rena Manuel<br><span></span><b>Group Member</b></h3>
+			</div>
+		</div>	
+	</div>	
+		
+	<div class="card">
+		<div class="cntnt">
+			<div class="imgBx"><img src="img/cams2.jpg"></div>
+			<div class="cntntBx">
+			<h3>Camille Nakpil<br><span></span><b>Group Member</b></h3>
+			</div>
+		</div>	
+	</div>	
+		
+</div>
+<br><br><br><br><br><br>
+</section>
+
+	<footer>
+	<div class="foot">
+		<div class ="sec aboutus">
+			<h5> YOUTIFY </h5>
+			<p class="p2"><b>Welcome to YOUTIFY, your number one source for all music. We're dedicated to giving you the very best of sounds, 
+			with a focus on allowing one to purse passion in music, ability to listen and spreading love.</b><br>
+			<br><a href="Log-In.html"><button>Sign In</button></a></p>
+		</div>
+		<div class="sec quicklinks">
+		<h5> Quick Links </h5>
+		<ul>
+			<li><a href="#about"><b>About</b></a></li>
+			<li><a href="#content"><b>Content</b></a></li>
+			<li><a href="Log-In.html"><b>Sign Up</b></a></li>
+			<li><a href="#developer"><b>Developers</b></a></li>
+			<li><a href="contact-us.html"><b>Contact Us Form</b></a></li>
+			</ul>
+		</div>
+		<div class="sec contactus">
+		<h5> Contact Info </h5>
+		<ul>
+			<p class="p2"><b> Bagong Nayon Street<br>
+			Antipolo, 1870,<br>
+			Philippines</p><br>
+			<p class="p2"> +639234865436<br><br>
+			youtify.io@outlook.com<br>
+			</b></p>
+			</div>
+		</div>
+		</footer> 
+	</body>
+	</html>

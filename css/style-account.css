@@ -1,0 +1,56 @@
+*{
+    padding: 0%;
+    margin: 0%;
+  }
+  
+  body{
+    height: 100vh;
+    background: white;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .fa-solid
+  {
+    font-size: 100px;
+    margin-left: 625px;
+  }
+
+  .fa-circle-user p
+  {
+    font-size: small;
+  }
+
+  .fa-house-user
+  {
+    font-size: 30px;
+ }
+
+  .account
+  {
+    text-align: center;
+  }
+  
+  .ver2
+  {
+    font-size: large;
+    text-align: justify;
+    margin-left: 140px;
+    color: darkgray;
+    margin-top: 50px;
+  }
+
+  hr 
+
+  {
+    width: 90%;
+  }
+
+  .answer
+  {
+    font-size: large;
+    color: darkgray;
+    text-align: justify;
+    margin-top: -330px;
+    float: right;
+    margin-right: 140px;
+  }
